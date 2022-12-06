@@ -10,7 +10,7 @@
 
 ● Create a VM through UI or fill in the information like Name, InstanceId, Zone, machine type, and CPU Platform and click on the Equivalent command line button (present at the bottom of the page), cloud shell will open with the information filled similar to the screenshot below. Below are the details that were chosen for this assignment:
 
-Name: cmpe283-instance
+Name: instance1
 
 Zone: us-central1-b
 
@@ -42,7 +42,51 @@ Boot disk : 100GB
 <img width="892" alt="Screenshot 2022-12-04 at 3 13 00 AM" src="https://user-images.githubusercontent.com/111544172/205809842-6b9efa15-cdd2-4eb9-b29a-70e0f58a27ee.png">
 
 
-● Clone the repository here and 
+● Clone the linux repository here:
+
+<img width="892" alt="Screenshot 2022-12-04 at 3 30 21 AM" src="https://user-images.githubusercontent.com/111544172/205817094-0ef2b578-c1b1-44a5-949b-e647b3902997.png">
+
+● Copy the config file in the directory from /boot and install make
+
+<img width="899" alt="Screenshot 2022-12-04 at 2 11 38 PM" src="https://user-images.githubusercontent.com/111544172/205819815-99e5f9f1-dfa4-4b78-a053-684b92c202d4.png">
+
+<img width="892" alt="Screenshot 2022-12-04 at 4 20 31 AM" src="https://user-images.githubusercontent.com/111544172/205817465-356bb6f1-ff04-42ce-9eea-f8138ee27c13.png">
+
+● Install all the necessary dependencies:
+
+<img width="892" alt="Screenshot 2022-12-04 at 4 28 32 AM" src="https://user-images.githubusercontent.com/111544172/205819102-89fc1234-08d4-410c-88a2-a53ca783b987.png">
+
+
+● Excecute the commands make menuconfig and make oldconfig:
+
+<img width="900" alt="Screenshot 2022-12-04 at 6 37 13 PM" src="https://user-images.githubusercontent.com/111544172/205820575-1a19903f-8f1f-49fb-8909-cafa5819fe8e.png">
+
+
+● To avoid getting error while running make modules make the below changes to config :
+
+scripts/config --disable SYSTEM_TRUSTED_KEYS <br/>
+scripts/config --disable SYSTEM_REVOCATION_KEYS<br/>
+
+<img width="900" alt="Screenshot 2022-12-04 at 7 26 39 PM" src="https://user-images.githubusercontent.com/111544172/205821070-2886a9a3-4fba-413a-a865-a79a57cf6c51.png">
+
+● Run the command '  make -j <your-vm-cpu-total-core-number> modules' to build the modules -> make -j 8 modules in our case
+  
+  <img width="900" alt="Screenshot 2022-12-04 at 8 07 32 PM" src="https://user-images.githubusercontent.com/111544172/205821550-829d714b-b232-4c0e-94ca-df318f6113b1.png">
+
+  <img width="900" alt="Screenshot 2022-12-04 at 8 08 22 PM" src="https://user-images.githubusercontent.com/111544172/205821589-9bd8fe96-6228-423e-9488-533100f1c4e0.png">
+
+  to avoid the error change the config file with the below change:
+  
+  <img width="900" alt="Screenshot 2022-12-04 at 8 19 32 PM" src="https://user-images.githubusercontent.com/111544172/205821835-e95b3334-ba11-4ea9-b17a-e1040177f7f5.png">
+
+  ● Now run 'make -j 8'
+  
+  <img width="900" alt="Screenshot 2022-12-04 at 8 21 43 PM" src="https://user-images.githubusercontent.com/111544172/205821932-f963f278-1151-41b7-812f-4249cfe7441a.png">
+
+  ● Run the coomand 'make -j 8' sudo make -j <your-vm-cpu-total-core-number> INSTALL_MOD_STRIP=1 modules_install
+  
+  
+
 
 
 
