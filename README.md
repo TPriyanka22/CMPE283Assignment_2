@@ -144,12 +144,14 @@ scripts/config --disable SYSTEM_REVOCATION_KEYS<br/>
     ● Open a new ternminal from the instance and keep the ubuntu terminal handy to test the cpuid leaf nodes
   
       In terminal where is ubuntu is installed enter the following command:
-      
-      <img width="1440" alt="Screenshot 2022-12-05 at 10 33 03 PM" src="https://user-images.githubusercontent.com/111544172/205838855-016c3e87-f35e-4b97-a0c3-c2eb8df2603a.png">
+  
+  <img width="1440" alt="Screenshot 2022-12-05 at 10 33 03 PM" src="https://user-images.githubusercontent.com/111544172/205839899-2812f8b2-0176-4198-acdf-5d2250400bdb.png">
 
       In new terminal - enter the command -'sudo dmesg'
   
-      <img width="1440" alt="Screenshot 2022-12-05 at 7 15 22 PM" src="https://user-images.githubusercontent.com/111544172/205839033-f1fe6b57-f26e-4992-a513-6947a6fcec2c.png">
+  <img width="1440" alt="Screenshot 2022-12-05 at 10 38 52 PM" src="https://user-images.githubusercontent.com/111544172/205840033-4f85cf4d-dc81-4f20-9012-e7ba9cca4f39.png">
+
+  
 
       Now try excecuting the other leaf node:
       
