@@ -102,13 +102,43 @@ scripts/config --disable SYSTEM_REVOCATION_KEYS<br/>
   ● Once after making necessary changes to the code in cpuid.c and vmx.c, install the modules agaim
   
   <img width="963" alt="Screenshot 2022-12-05 at 12 43 17 AM" src="https://user-images.githubusercontent.com/111544172/205824403-ebe928c5-80c4-4365-9392-dd4f3ae767ab.png">
-  
 
+  ● Run the following commands after building the modules:
+  
+    sudo rmmod kvm_intel
+    sudo rmmod kvm
+    sudo modprode kvm
+    sudo modprobe kvm_intel
   
   
+  ●  To test , we have to create an inner VM that can be done as follows:
   
+  Download the cloud image and give the command -  wget https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64.img 
   
+  and install all the necessary packages
+    ●  sudo apt update && sudo apt install qemu-kvm -y
+    ●  sudo apt-get install cloud-image-utils
   
+  ●  Create the user data and pass it as input to create the ubuntu instance
+    cat >user-data <<EOF
+    #cloud-config
+    password: NewGCP - ( Enter any password to set )
+    chpasswd: { expire: False }
+    ssh_pwauth: True
+    EOF
+  
+    ●  And execute the img as follows:
+    
+  <img width="1440" alt="Screenshot 2022-12-05 at 5 54 28 PM" src="https://user-images.githubusercontent.com/111544172/205835119-9cbe0671-dc13-4d30-afe2-4b5d25d50da3.png">
+
+    ●  Ubuntu login would be prompted and enter the password that was set before:
+  
+  <img width="1440" alt="Screenshot 2022-12-05 at 5 59 26 PM" src="https://user-images.githubusercontent.com/111544172/205835378-fc2ca1bc-ea86-4c77-9b0d-6a1784998eec.png">
+
+    ●  Now install the cpuid package :
+        
+      sudo apt-get update
+      sudo apt-get install cpuid
 
 
 
