@@ -150,7 +150,7 @@ scripts/config --disable SYSTEM_REVOCATION_KEYS<br/>
 
       In new terminal - enter the command -'sudo dmesg'
   
-  <img width="1440" alt="Screenshot 2022-12-05 at 10 38 52 PM" src="https://user-images.githubusercontent.com/111544172/205840033-4f85cf4d-dc81-4f20-9012-e7ba9cca4f39.png">
+    <img width="1440" alt="Screenshot 2022-12-05 at 10 38 52 PM" src="https://user-images.githubusercontent.com/111544172/205840033-4f85cf4d-dc81-4f20-9012-e7ba9cca4f39.png">
 
       Now try excecuting the other leaf node:
       
