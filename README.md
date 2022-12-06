@@ -145,12 +145,12 @@ scripts/config --disable SYSTEM_REVOCATION_KEYS<br/>
   
       In terminal where is ubuntu is installed enter the following command:
       
-    <img width="1440" alt="Screenshot 2022-12-05 at 11 10 44 PM" src="https://user-images.githubusercontent.com/111544172/205845057-0e0141eb-5432-4f8b-a224-c7c672b00a07.png">
+  <img width="1440" alt="Screenshot 2022-12-05 at 11 10 44 PM" src="https://user-images.githubusercontent.com/111544172/205845057-0e0141eb-5432-4f8b-a224-c7c672b00a07.png">
 
-
-      In new terminal - enter the command -'sudo dmesg'
   
-    <img width="1440" alt="Screenshot 2022-12-05 at 10 38 52 PM" src="https://user-images.githubusercontent.com/111544172/205840033-4f85cf4d-dc81-4f20-9012-e7ba9cca4f39.png">
+    In new terminal - enter the command -'sudo dmesg'
+  
+  <img width="1440" alt="Screenshot 2022-12-05 at 10 38 52 PM" src="https://user-images.githubusercontent.com/111544172/205840033-4f85cf4d-dc81-4f20-9012-e7ba9cca4f39.png">
 
       Now try excecuting the other leaf node:
       
