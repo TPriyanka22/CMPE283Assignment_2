@@ -83,7 +83,30 @@ scripts/config --disable SYSTEM_REVOCATION_KEYS<br/>
   
   <img width="900" alt="Screenshot 2022-12-04 at 8 21 43 PM" src="https://user-images.githubusercontent.com/111544172/205821932-f963f278-1151-41b7-812f-4249cfe7441a.png">
 
-  ● Run the coomand 'make -j 8' sudo make -j <your-vm-cpu-total-core-number> INSTALL_MOD_STRIP=1 modules_install
+  ● Run the coomand 'make -j 8' and then 'sudo make -j <your-vm-cpu-total-core-number> INSTALL_MOD_STRIP=1 modules_install' and then run 'make install'
+  
+  <img width="900" alt="Screenshot 2022-12-04 at 8 32 08 PM" src="https://user-images.githubusercontent.com/111544172/205822535-5dcce9c2-3843-407c-a5fe-146ae54595c9.png">
+
+  <img width="900" alt="Screenshot 2022-12-04 at 8 33 55 PM" src="https://user-images.githubusercontent.com/111544172/205822654-ac7cc3a2-8094-4dea-8dac-2ef3cdafb406.png">
+
+  And our linux kernal is built now.
+  
+  ● Reboot the VM  and connect back and give the command 
+  
+  <img width="900" alt="Screenshot 2022-12-04 at 8 38 53 PM" src="https://user-images.githubusercontent.com/111544172/205822909-dfebed1c-0ff7-40f1-987d-82fa3757092d.png">
+
+  ● Now that linux kernal is built to make the necessary changes for assignment redirect to the directory as follows:
+  
+  <img width="889" alt="Screenshot 2022-12-04 at 10 28 29 PM" src="https://user-images.githubusercontent.com/111544172/205823150-11cc5ef5-541c-469a-8b3a-5bbb0bbbb6f4.png">
+
+  ● Once after making necessary changes to the code in cpuid.c and vmx.c, install the modules agaim
+  
+  <img width="963" alt="Screenshot 2022-12-05 at 12 43 17 AM" src="https://user-images.githubusercontent.com/111544172/205824403-ebe928c5-80c4-4365-9392-dd4f3ae767ab.png">
+  
+
+  
+  
+  
   
   
 
