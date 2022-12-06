@@ -145,7 +145,8 @@ scripts/config --disable SYSTEM_REVOCATION_KEYS<br/>
   
       In terminal where is ubuntu is installed enter the following command:
       
-  <img width="1440" alt="Screenshot 2022-12-05 at 11 08 22 PM" src="https://user-images.githubusercontent.com/111544172/205844644-f3837a15-845f-4413-961f-3b1840f93964.png">
+    <img width="1440" alt="Screenshot 2022-12-05 at 11 10 44 PM" src="https://user-images.githubusercontent.com/111544172/205845057-0e0141eb-5432-4f8b-a224-c7c672b00a07.png">
+
 
       In new terminal - enter the command -'sudo dmesg'
   
