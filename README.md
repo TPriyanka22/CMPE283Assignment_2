@@ -144,8 +144,8 @@ scripts/config --disable SYSTEM_REVOCATION_KEYS<br/>
     ● Open a new ternminal from the instance and keep the ubuntu terminal handy to test the cpuid leaf nodes
   
       In terminal where is ubuntu is installed enter the following command:
-  
-  <img width="1440" alt="Screenshot 2022-12-05 at 10 33 03 PM" src="https://user-images.githubusercontent.com/111544172/205839899-2812f8b2-0176-4198-acdf-5d2250400bdb.png">
+      
+  <img width="1440" alt="Screenshot 2022-12-05 at 11 08 22 PM" src="https://user-images.githubusercontent.com/111544172/205844644-f3837a15-845f-4413-961f-3b1840f93964.png">
 
       In new terminal - enter the command -'sudo dmesg'
   
@@ -159,7 +159,8 @@ scripts/config --disable SYSTEM_REVOCATION_KEYS<br/>
   
   <img width="1440" alt="Screenshot 2022-12-05 at 10 40 14 PM" src="https://user-images.githubusercontent.com/111544172/205842584-93c3e63f-f8f7-4503-8a07-3babc5489bd8.png">
 
-  <img width="1440" alt="Screenshot 2022-12-05 at 10 57 49 PM" src="https://user-images.githubusercontent.com/111544172/205842743-6199913a-0160-466f-a486-2267c5491354.png">
+<img width="1440" alt="Screenshot 2022-12-05 at 11 08 09 PM" src="https://user-images.githubusercontent.com/111544172/205844605-66b610d8-b54f-45c0-b877-e319682b0faa.png">
+
 
   
   
